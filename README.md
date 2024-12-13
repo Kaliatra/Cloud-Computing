@@ -20,6 +20,12 @@ The following tools and technologies were utilized in the development of this cl
 ## Project Description
 This project focuses on implementing cloud computing solutions using modern tools and technologies. It integrates Google Cloud services and Firebase for authentication backend system for machine learning model with mobile development side.
 
+## Cloud Architecture 
+
+![Architecture](https://github.com/Alcadeius/Attachment/blob/main/GCP%20Diagram(1).png)
+
+## Cloud Estimate Billing 
+![Billing](https://github.com/Alcadeius/Attachment/blob/main/Billing%20Estimate%20GCP.png)
 ## API
 
 # Dictionary API
