@@ -23,14 +23,14 @@ This project focuses on implementing cloud computing solutions using modern tool
 
 # Dictionary API
 
-Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini sudah berjalan dalam server cloud dengan base url https://kaliatra.et.r.appspot.com/
+An API Backend Service that provides a collection of Balinese characters. This API is already running on the app engine server with a base url https://kaliatra.et.r.appspot.com/
 
 ## Endpoint route 
 
 
 
 
-#### Ambil semua Data Dictionary
+#### Get All Data Dictionary
 
 ```http
   /api/entry
@@ -57,8 +57,7 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
         "createdAt": "2024-11-21T05:11:25.197Z"
 } 
 ```
-#### Ambil Data Dictionary Berdasarkan Kategory
-
+#### Get Dictionary Entry base on Category
 ```http
    /api/entry/categories/:category
 ```
@@ -98,14 +97,14 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
 
 # Model API
 
-Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini sudah berjalan dalam server cloud run dengan base url https://model-api-852069596535.asia-southeast2.run.app
+An API Backend Service that provides a collection of Balinese characters. This API is already running on a cloud run server with a base url https://model-api-852069596535.asia-southeast2.run.app
 
 ## Endpoint route 
 
 
 
 
-#### Prediksi Aksara 
+#### Aksara Prediction
 
 ```http
   /predict
@@ -134,7 +133,7 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
     }
 }
 ```
-#### Prediksi Result
+#### Prediction Result
 
 ```http
    /predict/latest
@@ -160,7 +159,7 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
     }
 }
 ```
-#### Prediksi Handwriting
+#### Handwriting Prediction
 
 ```http
    /predict/handwrite
@@ -189,7 +188,7 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
     }
 }
 ```
-#### Prediksi Histories
+#### Prediction Histories
 
 ```http
    /predict/histories
@@ -216,7 +215,7 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
         },
 }
 ```
-#### Hapus Prediksi Histories
+#### Delete Prediction Histories
 
 ```http
    /predict/histories/:id
@@ -232,11 +231,32 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
     "message": "Prediction with ID 7cd73138-8043-4144-b6d4-8208f5d76a66 deleted successfully"
 }
 ```
-untuk :id berasal dari id prediction bukan user id
+
+# Login API
+
+An API Backend-Service that handle the login request from user.The API has been served with base url https://login-dot-kaliatra.et.r.appspot.com/
 
 
-## Bug/Error
 
-Untuk Bug dan Error baru yang ditemukan dapat menghubungi contributor yang bersangkutan
+## Endpoint Route
+
+#### Login semua Data Dictionary
+
+```http
+  /auth/google
+```
+- Method
+  - POST
+- Body
+  - ```
+      "idtoken":"<token>"
+- Response
+```
+{
+    "username":"I Made Andre Sentanu 14"
+    "email":"andresentanu3@gmail.com"
+    "photoURL":"https://storage.googleapis.com/kaliatra-account/profile-photo/110640933474179869822.jpg"
+} 
+```
 
 
