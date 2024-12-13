@@ -3,7 +3,8 @@
 ## Team Members
 | Name                   | ID            | Institution                            | Role               | Status  |
 |------------------------|---------------|---------------------------------------|--------------------|---------|
-| I Made Andre Sentanu  | c113b4ky1852  | Institut Teknologi dan Bisnis STIKOM Bali | Cloud Computing    | Active  |
+| I Made Andre Sentanu  | C113B4KY1852  | Institut Teknologi dan Bisnis STIKOM Bali | Cloud Computing    | Active  |
+| Putu Agung Irvan Cahyadi | C113B4KY3528 | Institut Teknologi dan Bisnis STIKOM Bali | Cloud Computing | Active |
 
 ## Tools Used
 The following tools and technologies were utilized in the development of this cloud computing project:
@@ -240,7 +241,7 @@ An API Backend-Service that handle the login request from user.The API has been 
 
 ## Endpoint Route
 
-#### Login semua Data Dictionary
+#### Login SSO Google
 
 ```http
   /auth/google
